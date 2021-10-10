@@ -176,8 +176,6 @@ def user_stats(df,city):
     print('User Stats:- ')
     print(df['User Type'].value_counts())
 
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def display_data(df):
