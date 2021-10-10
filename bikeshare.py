@@ -176,20 +176,6 @@ def user_stats(df,city):
     print('User Stats:- ')
     print(df['User Type'].value_counts())
 
-    if city != 'washington':
-        # washington city data has no Gender and Birth Year, as such we cannot perform the calculations below
-        # Display counts of gender
-        print('Gender Stats:- ')
-        print(df['Gender'].value_counts())
-
-        # Display earliest, most recent, and most common year of birth
-        print('Birth Year Stats:- ')
-        most_common_year = df['Birth Year'].mode()[0]
-        print('Most Common Year:',most_common_year)
-        most_recent_year = df['Birth Year'].max()
-        print('Most Recent Year:- ',most_recent_year)
-        earliest_year = df['Birth Year'].min()
-        print('Earliest Year:- ',earliest_year)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
